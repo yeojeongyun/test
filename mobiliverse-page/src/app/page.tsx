@@ -603,6 +603,6 @@ const FifthButton = styled.button`
   margin: 4px 10px;
   transition: 0.7s;
   &:hover {
-    background-color: #5048e5;
+    opacity: 10%;
   }
 `;
