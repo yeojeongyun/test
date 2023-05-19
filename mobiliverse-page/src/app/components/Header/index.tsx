@@ -325,10 +325,13 @@ const HamburgerButton = styled.button`
     color: #000;
     transform: scale(1.4);
   }
-  @media (max-width: 500px) {
-    margin-left: 8rem;
+  @media (max-width: 675px) {
+    margin-left: 11rem;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 540px) {
+    margin-left: 5rem;
+  }
+  @media (max-width: 445px) {
     margin-left: 0.8rem;
   }
 `;
@@ -347,11 +350,15 @@ const NavIcon = styled.ul`
   @media (max-width: 768px) {
     z-index: 100;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 675px) {
     padding: 0.9rem;
-    margin-left: 2rem;
+    margin-left: 7rem;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 540px) {
+    padding: 0.9rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 445px) {
     margin-left: -7rem;
     padding: 0.9rem;
   }
