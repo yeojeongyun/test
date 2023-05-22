@@ -1,0 +1,109 @@
+.animation {
+  animation-name: fadein;
+  animation-duration: 1s;
+  width: 100%;
+  height: 100%;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.download {
+  text-align: center;
+  align-items: center;
+  height: 15rem;
+  min-width: 100rem;
+}
+.download_name {
+  margin-top: 5rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.download_button {
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  top: 18rem;
+  left: 50.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #5048e5;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.5rem 7rem;
+}
+
+.inquiry {
+  min-width: 100rem;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(243, 244, 245);
+  height: 45rem;
+  padding-top: 0.1rem;
+  border-bottom: 0.1rem solid black;
+}
+.partnership {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+  margin-left: -50rem;
+}
+.mail {
+  margin-left: -45rem;
+  line-height: 30%;
+}
+.name {
+  margin-left: -20rem;
+}
+.answer {
+  border-radius: 0.5rem;
+  margin-left: 17rem;
+  margin-top: -0.5rem;
+  border: weight;
+  height: 2rem;
+  width: 39rem;
+}
+.answer:focus {
+  border: weight;
+}
+.answer_contents {
+  margin-top: -0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 17rem;
+  margin-bottom: 5rem;
+  height: 7rem;
+  resize: none;
+  border: weight;
+  width: 39rem;
+}
+.button {
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  margin-left: 17rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #5048e5;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.4rem 18rem;
+}
+.button:hover {
+  transition: 0.9s;
+  background-color: rgb(243, 244, 245);
+  color: #000;
+  outline: auto;
+}
+.answer:invalid {
+  border-color: red;
+}
+.answer_contents:invalid {
+  border-color: red;
+}
