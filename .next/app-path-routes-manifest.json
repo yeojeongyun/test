@@ -1,0 +1,12 @@
+{
+  "/about/page": "/about",
+  "/api/hello/route": "/api/hello",
+  "/components/Footer/page": "/components/Footer",
+  "/erp/page": "/erp",
+  "/components/Header/page": "/components/Header",
+  "/hire/page": "/hire",
+  "/ir/page": "/ir",
+  "/news/page": "/news",
+  "/page": "/",
+  "/platform/page": "/platform"
+}

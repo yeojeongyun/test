@@ -1,0 +1,122 @@
+/* 타블렛, 최대 768px 이하인 경우 적용 */
+@media (max-width: 768px) {
+  .nav_menu {
+    display: none;
+  }
+  ul.nav_icon {
+    z-index: 100;
+  }
+}
+/* 중간, 최소 768px 이상인 경우 적용 */
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+    padding-left: 0;
+    margin-left: 4rem;
+  }
+}
+/* 큰 데스크탑, 최소 900px 이상인 경우 적용 */
+@media (min-width: 900px) {
+  .nav_menu > li {
+    font-size: 1rem;
+  }
+}
+
+/* 햄버거메뉴 */
+.nav_icon {
+  display: block;
+  margin-top: -0.01rem;
+  margin-left: 13rem;
+  margin-right: -20rem;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255);
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  z-index: 500;
+  line-height: 200%;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+button.menu {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 18rem;
+  border: none;
+  background-size: cover;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* 일반메뉴 */
+.header {
+  min-width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 0.1rem solid black;
+}
+.nav_menu > li {
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0.8rem;
+  position: relative;
+}
+.hLink {
+  cursor: pointer;
+}
+.hLink > a:hover {
+  color: #5048e5;
+}
+.hLink > a:focus {
+  border-color: #5048e5;
+}
+.submenu > li > a:hover {
+  color: #5048e5;
+}
+.hImg {
+  text-align: center;
+  align-items: center;
+}
+.submenu {
+  padding-right: 1rem;
+  margin-left: -3rem;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 7rem;
+  height: 0;
+  background-color: white;
+}
+.submenu > a {
+  display: inline-block;
+}
+.nav_menu li:hover .submenu {
+  display: block;
+  height: auto;
+  transition-duration: 1s;
+  z-index: 50;
+  position: absolute;
+  transition-duration: 0.2s;
+  float: left;
+  text-align: left;
+  line-height: 2rem;
+}
+.ActiveLink {
+  color: #5048e5;
+}

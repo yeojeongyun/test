@@ -1,0 +1,12 @@
+{
+  "/about/page": "app/about/page.js",
+  "/api/hello/route": "app/api/hello/route.js",
+  "/components/Footer/page": "app/components/Footer/page.js",
+  "/erp/page": "app/erp/page.js",
+  "/components/Header/page": "app/components/Header/page.js",
+  "/hire/page": "app/hire/page.js",
+  "/ir/page": "app/ir/page.js",
+  "/news/page": "app/news/page.js",
+  "/page": "app/page.js",
+  "/platform/page": "app/platform/page.js"
+}

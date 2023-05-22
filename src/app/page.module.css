@@ -1,0 +1,330 @@
+.animation {
+  animation-name: fadein;
+  animation-duration: 1s;
+  width: 100%;
+  height: 100%;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.parent {
+  text-align: center;
+  align-items: center;
+  margin-bottom: -31rem;
+  justify-content: center;
+  /* background-image: url('https://static.wixstatic.com/media/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png/v1/fill/w_2000,h_179,al_c,q_85,enc_auto/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.img {
+  width: 100%;
+  /* display: flex; */
+  height: 35rem;
+}
+.image_text {
+  position: absolute;
+  line-height: 25%;
+  margin-top: 18rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  z-index: 80;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.image_text_under {
+  position: absolute;
+  margin-top: 25rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 35%;
+  color: black;
+}
+.overlap_text {
+  position: absolute;
+  line-height: 25%;
+  margin-top: 15.7rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 2.5rem;
+  color: rgb(100, 150, 248);
+  font-weight: bold;
+}
+.over_text_2 {
+  position: absolute;
+  line-height: 25%;
+  margin-top: 15.4rem;
+  top: 0;
+  left: 0;
+  right: 0.2rem;
+  font-size: 2.5rem;
+  color: rgb(175, 68, 251);
+  font-weight: bold;
+}
+
+/* second */
+.Second {
+  margin-top: 31rem;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(245, 247, 250);
+  width: 100%;
+  height: 42rem;
+  min-width: 100rem;
+}
+.card {
+  margin-right: -30rem;
+}
+.SecondText {
+  margin-top: -26rem;
+  padding-right: 28rem;
+  font-size: 2.5rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.SecondText2 {
+  margin-top: 3rem;
+  padding-right: 23rem;
+  font-size: 2.5rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.SecondText_under {
+  top: 21rem;
+  margin-top: 2rem;
+  padding-right: 25rem;
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.SecondText_under2 {
+  top: 21rem;
+  margin-top: 1.5rem;
+  padding-right: 20.5rem;
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.SecondButton {
+  margin-left: -40rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #5048e5;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+
+/* Third */
+.Third {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 40rem;
+  text-align: center;
+  align-items: center;
+  min-width: 100rem;
+}
+.ThirdButton {
+  position: relative;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  bottom: -11rem;
+  right: -6rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #5048e5;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 4px 10px;
+}
+.erp {
+  margin-bottom: -20rem;
+  margin-left: -30rem;
+}
+.click {
+  margin-bottom: 2rem;
+  margin-left: -16rem;
+}
+.ThirdText {
+  font-size: 2.5rem;
+  line-height: 50%;
+  font-weight: bold;
+  margin-right: 0;
+  margin-left: 28rem;
+  margin-top: -10rem;
+}
+.ThirdText_under {
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+  margin-left: 31rem;
+  margin-top: 4rem;
+  margin-bottom: -10rem;
+}
+.ThirdText_under_2 {
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+  margin-left: 35rem;
+  margin-top: 12rem;
+  margin-bottom: -10rem;
+}
+.click_text {
+  font-size: 2rem;
+  line-height: 50%;
+  font-weight: bold;
+  z-index: 3;
+  bottom: 25rem;
+  margin-left: -19rem;
+  margin-top: -12rem;
+  color: white;
+  min-width: 100rem;
+}
+
+/* Fourth */
+.Fourth {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(245, 247, 250);
+  width: 100%;
+  height: 40rem;
+  min-width: 100rem;
+}
+.phone {
+  position: relative;
+  transform: rotate(-25deg);
+  top: 2rem;
+  left: 33rem;
+  min-width: 1rem;
+}
+.gama {
+  position: relative;
+  top: 10rem;
+  bottom: -30rem;
+  left: 7rem;
+  min-width: 1rem;
+}
+.FourthText {
+  margin-top: -28rem;
+  padding-top: 10rem;
+  padding-right: 35rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.FourthText_2 {
+  margin-top: -2rem;
+  padding-right: 16rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.FourthText_under {
+  top: 21rem;
+  padding-right: 25rem;
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.FourthText_under2 {
+  top: 21rem;
+  margin-top: 2rem;
+  padding-right: 34rem;
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+.FourthText_under3 {
+  top: 21rem;
+  margin-top: 2rem;
+  padding-right: 25rem;
+  font-size: 1.2rem;
+  line-height: 30%;
+  font-weight: bold;
+}
+/* fifth */
+.Fifth {
+  position: relative;
+  background-color: #5048e5;
+  height: 52rem;
+  text-align: center;
+  min-width: 100rem;
+}
+.Fifth_Bottom {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 33rem;
+  bottom: 1em;
+}
+.Fifth_img {
+  position: absolute;
+  top: 35rem;
+  align-items: center;
+  left: 0;
+  right: 40rem;
+  margin: auto;
+}
+.FifthText {
+  position: absolute;
+  top: 37rem;
+  left: 10rem;
+  right: 0;
+  margin: auto;
+  font-size: 2rem;
+  line-height: 30%;
+  font-weight: bold;
+  color: white;
+}
+.FifthText2 {
+  position: absolute;
+  top: 40rem;
+  left: -58rem;
+  right: 1rem;
+  margin: auto;
+  padding-left: 57rem;
+  font-size: 2rem;
+  line-height: 30%;
+  font-weight: bold;
+  color: white;
+}
+.FifthButton:hover {
+  background-color: #5048e5;
+}
+.FifthButton {
+  position: absolute;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  top: 45rem;
+  font-size: 1.2rem;
+  color: #5048e5;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 4px 10px;
+  transition: 0.7s;
+}
