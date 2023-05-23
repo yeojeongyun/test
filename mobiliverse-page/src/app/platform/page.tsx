@@ -2,8 +2,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 // import styles from './page.module.css';
-import Header from "../components/Header/page";
-import Footer from "../components/Footer/page";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 export default function Platform() {
   return (
     <Animation>
