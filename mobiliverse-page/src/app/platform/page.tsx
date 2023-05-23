@@ -1,11 +1,13 @@
-'use client';
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
+"use client";
+import React from "react";
+import styled, { keyframes } from "styled-components";
 // import styles from './page.module.css';
-
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
 export default function Platform() {
   return (
     <Animation>
+      <Header />
       <First>
         <Name>가마 중개플랫폼</Name>
         <Contents>렌터카 관련 서비스를 하나의 어플에서 간편하게!</Contents>
@@ -22,7 +24,7 @@ export default function Platform() {
           marginRight="0"
           marginLeft="40rem"
         >
-          <span style={{ color: '#5048e5' }}>다양한</span>
+          <span style={{ color: "#5048e5" }}>다양한</span>
         </SectionName>
         <SectionName
           className="FirstUnder"
@@ -70,7 +72,7 @@ export default function Platform() {
           marginRight="0"
           marginLeft="67rem"
         >
-          <span style={{ color: '#5048e5' }}>여러 대여 옵션</span>을
+          <span style={{ color: "#5048e5" }}>여러 대여 옵션</span>을
         </SectionName>
         <SectionName
           className="Second3"
@@ -108,8 +110,8 @@ export default function Platform() {
           marginRight="0"
           marginLeft="51rem"
         >
-          <span style={{ color: '#5048e5' }}>편안</span>하고
-          <span style={{ color: '#5048e5' }}>안전</span>
+          <span style={{ color: "#5048e5" }}>편안</span>하고
+          <span style={{ color: "#5048e5" }}>안전</span>
           하게
         </SectionName>
         <SectionName
@@ -141,7 +143,7 @@ export default function Platform() {
           marginLeft="70rem"
         >
           보다
-          <span style={{ color: '#5048e5' }}>편리한</span>
+          <span style={{ color: "#5048e5" }}>편리한</span>
           <p>대여 서비스</p>
         </SectionName>
         <SectionEvenText
@@ -161,6 +163,7 @@ export default function Platform() {
           <p>가마에서 하나로 다양한 렌터카 서비스를 자유롭게 이용하세요.</p>
         </SectionEvenText>
       </Section>
+      <Footer />
     </Animation>
   );
 }
