@@ -1,0 +1,164 @@
+.animation {
+  animation-name: fadein;
+  animation-duration: 1s;
+  width: 100%;
+  height: 100%;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.platform {
+  height: 33rem;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-bottom: -15rem;
+  min-width: 100rem;
+}
+.name {
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.contents {
+  line-height: 80%;
+  font-size: 1.2rem;
+}
+
+.section1 {
+  position: relative;
+  height: 39rem;
+  text-align: center;
+  min-width: 100rem;
+}
+.section1_img {
+  margin-left: 59rem;
+}
+.section1_name {
+  margin-top: -25rem;
+  margin-right: 70rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+}
+.section1_name2 {
+  margin-top: 1rem;
+  margin-right: 52rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+}
+.section1_text {
+  margin-right: 61rem;
+  margin-top: 4rem;
+  line-height: 20%;
+  font-size: 0.8rem;
+}
+.section1_text2 {
+  margin-right: 60rem;
+  line-height: 20%;
+  font-size: 0.8rem;
+}
+
+.section2 {
+  position: relative;
+  height: 36rem;
+  text-align: center;
+  min-width: 100rem;
+}
+.section2_img {
+  margin-left: -60rem;
+}
+.section2_name {
+  margin-right: 17rem;
+  margin-left: 76rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+  margin-top: -20rem;
+}
+.section2_name2 {
+  margin-right: 17rem;
+  margin-left: 60rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.section2_text {
+  line-height: 20%;
+  margin-left: 50rem;
+  margin-top: 4rem;
+  font-size: 0.8rem;
+}
+.section2_text2 {
+  line-height: 20%;
+  margin-left: 56rem;
+  font-size: 0.8rem;
+}
+
+.section3 {
+  position: relative;
+  height: 39rem;
+  text-align: center;
+  min-width: 100rem;
+}
+.section3_img {
+  margin-left: 59rem;
+}
+.section3_name {
+  margin-top: -25rem;
+  margin-right: 60rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+}
+.section3_name2 {
+  margin-top: 1rem;
+  margin-right: 32.5em;
+  font-size: 2rem;
+  line-height: 10%;
+  font-weight: bold;
+}
+.section3_text {
+  margin-right: 53rem;
+  margin-top: 3.8rem;
+  line-height: 10%;
+  font-size: 0.8rem;
+}
+
+.section4 {
+  position: relative;
+  height: 36.5rem;
+  text-align: center;
+  min-width: 100rem;
+}
+.section4_img {
+  margin-left: -60rem;
+}
+.section4_name {
+  margin-right: 17rem;
+  margin-left: 80rem;
+  font-size: 2rem;
+  line-height: 20%;
+  font-weight: bold;
+  margin-top: -25rem;
+}
+.section4_text {
+  line-height: 10%;
+  margin-left: 61rem;
+  margin-top: 4rem;
+  font-size: 0.8rem;
+}
+.section4_text2 {
+  line-height: 10%;
+  margin-left: 51rem;
+  margin-top: 0rem;
+  font-size: 0.8rem;
+}
