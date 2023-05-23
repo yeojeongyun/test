@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 // import styles from './page.module.css';
-import Header from "../components/Header/page";
-import Footer from "../components/Footer/page";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import styled, { keyframes } from "styled-components";
 
 export default function IR() {
