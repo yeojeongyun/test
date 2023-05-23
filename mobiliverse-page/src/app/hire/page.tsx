@@ -1,11 +1,15 @@
-'use client';
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
+"use client";
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
 export default function Example() {
   return (
     <Hire>
+      <Header />
       <Name>인재 채용</Name>
       <Contents>현재 채용중인 공고가 없습니다.</Contents>
+      <Footer />
     </Hire>
   );
 }
@@ -36,10 +40,18 @@ const Name = styled.p`
 `;
 const Contents = styled.p`
   font-size: 1.3rem;
+  height: 25rem;
+  /* margin-bottom: 15rem; */
+  @media (min-width: 280px) {
+    height: 33rem;
+  }
+  /* @media (max-width: 600px) {
+    height: 35rem;
+  }
   @media (min-width: 768px) {
     margin-left: -20rem;
   }
   @media (min-width: 900px) {
     margin-left: -35rem;
-  }
+  } */
 `;
