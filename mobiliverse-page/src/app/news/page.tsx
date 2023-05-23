@@ -1,11 +1,14 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 // import styles from './page.module.css';
-import styled, { keyframes } from 'styled-components';
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
+import styled, { keyframes } from "styled-components";
 
 export default function News() {
   return (
     <Animation>
+      <Header />
       <Section1>
         <Img src="https://static.wixstatic.com/media/11062b_6783fe24ca554c53a3ab020857a888d8~mv2.jpg/v1/fill/w_1903,h_334,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_6783fe24ca554c53a3ab020857a888d8~mv2.jpg" />
         <Name toggle={true} fontSize="3.5rem" top="4.5rem">
@@ -21,6 +24,7 @@ export default function News() {
         <Name2>새로운 소식이 없습니다.</Name2>
         <Contents2>모빌리버스 소식을 기다려 주세요!</Contents2>
       </Section2>
+      <Footer />
     </Animation>
   );
 }
