@@ -1,11 +1,13 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 // import styles from './page.module.css';
-import styled, { keyframes } from 'styled-components';
-
+import styled, { keyframes } from "styled-components";
+import Header from "../components/Header/page";
+import Footer from "../components/Footer/page";
 export default function Erp() {
   return (
     <Animation>
+      <Header />
       <Section1>
         <Gama>가마 ERP </Gama>
         <P toggle={true} marginLeft="-33.5rem">
@@ -33,7 +35,7 @@ export default function Erp() {
         </FeatureAbout>
         <FeatureAbout toggle={true} marginTop="3rem" marginLeft="-33rem">
           이제 가마 ERP에서
-          <span style={{ color: '#5048e5' }}>원클릭</span> 해결!
+          <span style={{ color: "#5048e5" }}>원클릭</span> 해결!
         </FeatureAbout>
         <Img
           className="Click"
@@ -79,7 +81,7 @@ export default function Erp() {
           marginBottom="0"
           marginRight="0"
         >
-          <span style={{ color: '#5048e5' }}>비대면 전자계약</span>으로
+          <span style={{ color: "#5048e5" }}>비대면 전자계약</span>으로
         </SectionName>
         <SectionName
           className="SecondUnder"
@@ -136,7 +138,7 @@ export default function Erp() {
           marginLeft="55rem"
           marginBottom="3rem"
         >
-          상호 <span style={{ color: '#5048e5' }}>유기적</span> 연결
+          상호 <span style={{ color: "#5048e5" }}>유기적</span> 연결
         </SectionName>
         <Section3Contents
           className="Third"
@@ -155,6 +157,7 @@ export default function Erp() {
           예약 및 차량 관리에 용이하며, 고객의 니즈 파악 및 해결이 빠릅니다.
         </Section3Contents>
       </SectionUnder>
+      <Footer />
     </Animation>
   );
 }
