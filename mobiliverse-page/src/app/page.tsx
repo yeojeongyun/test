@@ -3,8 +3,8 @@ import React from "react";
 // import styles from './page.module.css';
 import styled, { keyframes } from "styled-components";
 import Link from "next/link";
-import Header from "./components/Header/page";
-import Footer from "./components/Footer/page";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // import StyledComponentsRegistry from '../../lib/registry';
 
 export default function Home() {
