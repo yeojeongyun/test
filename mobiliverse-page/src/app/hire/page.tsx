@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Header from "../components/Header/page";
-import Footer from "../components/Footer/page";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 export default function Example() {
   return (
     <Hire>
