@@ -338,9 +338,9 @@ const HamburgerSubMenu = styled.ul`
   margin-top: -11rem;
   margin-left: -11.5rem;
   display: none;
-  top: 10rem;
+  top: 100%;
   width: 7rem;
-  background-color: rgb(245, 247, 250);
+  /* background-color: rgb(245, 247, 250); */
 `;
 const NavIcon = styled.ul`
   display: block;
@@ -353,7 +353,7 @@ const NavIcon = styled.ul`
   text-align: center;
   padding: 1rem;
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   z-index: 500;
   line-height: 200%;
 
