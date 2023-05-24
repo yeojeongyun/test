@@ -1,11 +1,13 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 // import styles from './page.module.css';
-import styled, { keyframes } from 'styled-components';
-
+import styled, { keyframes } from "styled-components";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 export default function About() {
   return (
     <Animation>
+      <Header />
       <First>
         <Img src="https://static.wixstatic.com/media/10252b_5cf088adf70442a8a8a3b2efa986238f~mv2.png/v1/fill/w_1903,h_360,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/10252b_5cf088adf70442a8a8a3b2efa986238f~mv2.png" />
 
@@ -26,7 +28,7 @@ export default function About() {
         <Year>
           <YearAbout>연혁</YearAbout>
           <YearContents>
-            <span style={{ color: '#5048e5' }}>2022년 08월</span>
+            <span style={{ color: "#5048e5" }}>2022년 08월</span>
             (주) 모빌리버스 설립
           </YearContents>
         </Year>
@@ -50,6 +52,7 @@ export default function About() {
           </a>
         </Download>
       </First>
+      <Footer />
     </Animation>
   );
 }

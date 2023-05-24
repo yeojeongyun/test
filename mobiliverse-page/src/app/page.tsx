@@ -1,193 +1,198 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 // import styles from './page.module.css';
-import styled, { keyframes } from 'styled-components';
-import Link from 'next/link';
-import StyledComponentsRegistry from '../../lib/registry';
+import styled, { keyframes } from "styled-components";
+import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+// import StyledComponentsRegistry from '../../lib/registry';
 
 export default function Home() {
   return (
-    <StyledComponentsRegistry>
-      <Animation>
-        <Parent>
-          <MainImg src="https://static.wixstatic.com/media/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png/v1/fill/w_2000,h_179,al_c,q_85,enc_auto/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png" />
-          <MainText>
-            OPEN A NEW WORLD
-            <p>WITH EXPERIENCE</p>
-          </MainText>
-          <MainTextUnder>
-            다양한 경험이 새로운 경험으로 새로운 세계를 엽니다.
-          </MainTextUnder>
-          <TextOverlap
-            toggle={true}
-            marginTop="15.7rem"
-            right="0rem"
-            color="rgb(100, 150, 248)"
-          >
-            <p>OPEN A NEW WORLD</p>
-            <p>WITH EXPERIENCE</p>
-          </TextOverlap>
-          <TextOverlap
-            toggle={true}
-            marginTop="15.4rem"
-            right="0.2rem"
-            color="rgb(175, 68, 251)"
-          >
-            <p>OPEN A NEW WORLD</p>
-            <p>WITH EXPERIENCE</p>
-          </TextOverlap>
-        </Parent>
+    // <StyledComponentsRegistry>
+    <Animation>
+      <Header />
+      <Parent>
+        <MainImg src="https://static.wixstatic.com/media/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png/v1/fill/w_2000,h_179,al_c,q_85,enc_auto/10252b_5bd038179da44e34a79f323e45dbdbb5~mv2.png" />
+        <MainText>
+          OPEN A NEW WORLD
+          <p>WITH EXPERIENCE</p>
+        </MainText>
+        <MainTextUnder>
+          다양한 경험이 새로운 경험으로 새로운 세계를 엽니다.
+        </MainTextUnder>
+        <TextOverlap
+          toggle={true}
+          marginTop="15.7rem"
+          right="0rem"
+          color="rgb(100, 150, 248)"
+        >
+          <p>OPEN A NEW WORLD</p>
+          <p>WITH EXPERIENCE</p>
+        </TextOverlap>
+        <TextOverlap
+          toggle={true}
+          marginTop="15.4rem"
+          right="0.2rem"
+          color="rgb(175, 68, 251)"
+        >
+          <p>OPEN A NEW WORLD</p>
+          <p>WITH EXPERIENCE</p>
+        </TextOverlap>
+      </Parent>
 
-        {/* second */}
-        <EvenSection toggle={true} height="40rem" marginTop="31rem">
-          <SecondImg src="https://static.wixstatic.com/media/10252b_55625c5c8cdb4915a167fd0eb180c603~mv2.png/v1/fill/w_628,h_628,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/%EC%82%AC%EA%B3%A0%EB%8C%80%EC%B0%A8%20(2).png" />
-          <EvenText
-            className="SecondText"
+      {/* second */}
+      <EvenSection toggle={true} height="40rem" marginTop="31rem">
+        <SecondImg src="https://static.wixstatic.com/media/10252b_55625c5c8cdb4915a167fd0eb180c603~mv2.png/v1/fill/w_628,h_628,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/%EC%82%AC%EA%B3%A0%EB%8C%80%EC%B0%A8%20(2).png" />
+        <EvenText
+          className="SecondText"
+          toggle={true}
+          marginTop="-26rem"
+          paddingRight="33rem"
+        >
+          렌트카 관련 서비스,
+        </EvenText>
+        <EvenText
+          className="SecondText"
+          toggle={true}
+          marginTop="3rem"
+          paddingRight="29rem"
+        >
+          <p>하나의 앱에서 간편하게!</p>
+        </EvenText>
+        <EvenTextUnder
+          toggle={true}
+          marginTop="4rem"
+          paddingRight="25rem"
+          marginLeft="-1rem"
+        >
+          <p>회원가입 없이도 간편하게 사고대차 요청하고</p>
+        </EvenTextUnder>
+        <EvenTextUnder
+          toggle={true}
+          marginTop="1.5rem"
+          paddingRight="20.5rem"
+          marginLeft="-1rem"
+        >
+          <p>사용할수록 쌓이는 포인트와 차량 관리 상품 구매까지!</p>
+        </EvenTextUnder>
+        <Link href="/platform">
+          <SecondButton>자세히보기</SecondButton>
+        </Link>
+      </EvenSection>
+
+      {/* third */}
+      <OddSection>
+        <ThirdImg
+          toggle={true}
+          marginBottom="-20rem"
+          marginLeft="-25rem"
+          src="https://static.wixstatic.com/media/10252b_85c81a00f47c40eab52f255b743e08c2~mv2.png/v1/crop/x_8,y_379,w_618,h_512/fill/w_434,h_359,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20ERP%20(3).png"
+        />
+        <ThirdImg
+          className="Click"
+          toggle={true}
+          marginBottom="2rem"
+          marginLeft="-16rem"
+          src="https://static.wixstatic.com/media/10252b_85c81a00f47c40eab52f255b743e08c2~mv2.png/v1/crop/x_259,y_0,w_366,h_371/fill/w_250,h_254,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20ERP%20(3).png"
+        />
+        <OddText>
+          <p>자동차 렌트에 필요한</p>
+          <p>모든 업무를 한 곳에서!</p>
+        </OddText>
+        <OddTextUnder toggle={true} marginLeft="24rem" marginTop="4rem">
+          업체 규모 상관없이
+          <p>전문적 렌터카 관리 서비스 지원,</p>
+          <p>중개플랫폼 실시간 연동으로 </p>
+          <p> 업무 처리 속도 및 효율성 증가</p>
+        </OddTextUnder>
+        <Link href="/erp">
+          <ThirdButton>자세히보기</ThirdButton>
+        </Link>
+        <ClickText>
+          <p>One</p>
+          <p>Click!!!</p>
+        </ClickText>
+      </OddSection>
+
+      {/*fourth*/}
+      <EvenSection toggle={true} height="40rem" marginTop="0">
+        <FourthImg src="https://static.wixstatic.com/media/10252b_60a07bb155664188a9142ebb948e2dde~mv2.png/v1/crop/x_81,y_305,w_300,h_564/fill/w_230,h_441,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EB%A7%88%EC%A7%80%EB%A7%89%EC%9E%A5.png" />
+        <FourthImg2 src="https://static.wixstatic.com/media/10252b_60a07bb155664188a9142ebb948e2dde~mv2.png/v1/crop/x_443,y_403,w_578,h_484/fill/w_393,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EB%A7%88%EC%A7%80%EB%A7%89%EC%9E%A5.png" />
+        <FourthText>일상생활 속에서</FourthText>
+        <EvenText
+          className="FourthText"
+          toggle={true}
+          marginTop="-1rem"
+          paddingRight="23rem"
+        >
+          <p>
+            시간과 장소에
+            <span style={{ color: "#5048e5" }}>구애받지 않는</span>
+            &apos;가마&apos;
+          </p>
+        </EvenText>
+        <EvenTextUnder
+          className="FourthUnder"
+          toggle={true}
+          marginTop="5rem"
+          paddingRight="25rem"
+          marginLeft="0"
+        >
+          언제 어디에서나 내가 원하는 차량을 빠르게 예약하고
+        </EvenTextUnder>
+        <EvenTextUnder
+          className="FourthUnder"
+          toggle={true}
+          marginTop="1.5rem"
+          paddingRight="33rem"
+          marginLeft="0"
+        >
+          <p>비대면 계약서를 통한 빠른 업무지원!</p>
+        </EvenTextUnder>
+        <EvenTextUnder
+          className="FourthUnder"
+          toggle={true}
+          marginTop="1.5rem"
+          paddingRight="25rem"
+          marginLeft="0"
+        >
+          <p>&apos;가마&apos;에서 이동 서비스와 모든 업무를 이용해 보세요.</p>
+        </EvenTextUnder>
+      </EvenSection>
+
+      {/* fifth */}
+      <FifthSection>
+        <FifthBottom>
+          <FifthImg src="https://static.wixstatic.com/media/10252b_05d243f2f5a846f6a92af7a013bc07a2~mv2.png/v1/fill/w_264,h_264,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20%EC%95%84%EC%9D%B4%EC%BD%98_PNG.png" />
+          <FifthText
             toggle={true}
-            marginTop="-26rem"
-            paddingRight="33rem"
+            left="10rem"
+            top="37rem"
+            right="0"
+            paddingLeft="0"
           >
-            렌트카 관련 서비스,
-          </EvenText>
-          <EvenText
-            className="SecondText"
+            <p>가마와 함께 새로운 세계를 열</p>
+          </FifthText>
+          <FifthText
+            className="Under"
             toggle={true}
-            marginTop="3rem"
-            paddingRight="29rem"
+            left="-58rem"
+            top="40rem"
+            right="1rem"
+            paddingLeft="57rem"
           >
-            <p>하나의 앱에서 간편하게!</p>
-          </EvenText>
-          <EvenTextUnder
-            toggle={true}
-            marginTop="4rem"
-            paddingRight="25rem"
-            marginLeft="-1rem"
-          >
-            <p>회원가입 없이도 간편하게 사고대차 요청하고</p>
-          </EvenTextUnder>
-          <EvenTextUnder
-            toggle={true}
-            marginTop="1.5rem"
-            paddingRight="20.5rem"
-            marginLeft="-1rem"
-          >
-            <p>사용할수록 쌓이는 포인트와 차량 관리 상품 구매까지!</p>
-          </EvenTextUnder>
-          <Link href="/platform">
-            <SecondButton>자세히보기</SecondButton>
+            <p>인재를 찾습니다</p>
+          </FifthText>
+          <Link href="/hire">
+            <FifthButton>지원하기</FifthButton>
           </Link>
-        </EvenSection>
+        </FifthBottom>
+      </FifthSection>
+      <Footer />
+    </Animation>
 
-        {/* third */}
-        <OddSection>
-          <ThirdImg
-            toggle={true}
-            marginBottom="-20rem"
-            marginLeft="-25rem"
-            src="https://static.wixstatic.com/media/10252b_85c81a00f47c40eab52f255b743e08c2~mv2.png/v1/crop/x_8,y_379,w_618,h_512/fill/w_434,h_359,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20ERP%20(3).png"
-          />
-          <ThirdImg
-            className="Click"
-            toggle={true}
-            marginBottom="2rem"
-            marginLeft="-16rem"
-            src="https://static.wixstatic.com/media/10252b_85c81a00f47c40eab52f255b743e08c2~mv2.png/v1/crop/x_259,y_0,w_366,h_371/fill/w_250,h_254,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20ERP%20(3).png"
-          />
-          <OddText>
-            <p>자동차 렌트에 필요한</p>
-            <p>모든 업무를 한 곳에서!</p>
-          </OddText>
-          <OddTextUnder toggle={true} marginLeft="24rem" marginTop="4rem">
-            업체 규모 상관없이
-            <p>전문적 렌터카 관리 서비스 지원,</p>
-            <p>중개플랫폼 실시간 연동으로 </p>
-            <p> 업무 처리 속도 및 효율성 증가</p>
-          </OddTextUnder>
-          <Link href="/erp">
-            <ThirdButton>자세히보기</ThirdButton>
-          </Link>
-          <ClickText>
-            <p>One</p>
-            <p>Click!!!</p>
-          </ClickText>
-        </OddSection>
-
-        {/*fourth*/}
-        <EvenSection toggle={true} height="40rem" marginTop="0">
-          <FourthImg src="https://static.wixstatic.com/media/10252b_60a07bb155664188a9142ebb948e2dde~mv2.png/v1/crop/x_81,y_305,w_300,h_564/fill/w_230,h_441,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EB%A7%88%EC%A7%80%EB%A7%89%EC%9E%A5.png" />
-          <FourthImg2 src="https://static.wixstatic.com/media/10252b_60a07bb155664188a9142ebb948e2dde~mv2.png/v1/crop/x_443,y_403,w_578,h_484/fill/w_393,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EB%A7%88%EC%A7%80%EB%A7%89%EC%9E%A5.png" />
-          <FourthText>일상생활 속에서</FourthText>
-          <EvenText
-            className="FourthText"
-            toggle={true}
-            marginTop="-1rem"
-            paddingRight="23rem"
-          >
-            <p>
-              시간과 장소에
-              <span style={{ color: '#5048e5' }}>구애받지 않는</span>
-              &apos;가마&apos;
-            </p>
-          </EvenText>
-          <EvenTextUnder
-            className="FourthUnder"
-            toggle={true}
-            marginTop="5rem"
-            paddingRight="25rem"
-            marginLeft="0"
-          >
-            언제 어디에서나 내가 원하는 차량을 빠르게 예약하고
-          </EvenTextUnder>
-          <EvenTextUnder
-            className="FourthUnder"
-            toggle={true}
-            marginTop="1.5rem"
-            paddingRight="33rem"
-            marginLeft="0"
-          >
-            <p>비대면 계약서를 통한 빠른 업무지원!</p>
-          </EvenTextUnder>
-          <EvenTextUnder
-            className="FourthUnder"
-            toggle={true}
-            marginTop="1.5rem"
-            paddingRight="25rem"
-            marginLeft="0"
-          >
-            <p>&apos;가마&apos;에서 이동 서비스와 모든 업무를 이용해 보세요.</p>
-          </EvenTextUnder>
-        </EvenSection>
-
-        {/* fifth */}
-        <FifthSection>
-          <FifthBottom>
-            <FifthImg src="https://static.wixstatic.com/media/10252b_05d243f2f5a846f6a92af7a013bc07a2~mv2.png/v1/fill/w_264,h_264,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EA%B0%80%EB%A7%88%20%EC%95%84%EC%9D%B4%EC%BD%98_PNG.png" />
-            <FifthText
-              toggle={true}
-              left="10rem"
-              top="37rem"
-              right="0"
-              paddingLeft="0"
-            >
-              <p>가마와 함께 새로운 세계를 열</p>
-            </FifthText>
-            <FifthText
-              className="Under"
-              toggle={true}
-              left="-58rem"
-              top="40rem"
-              right="1rem"
-              paddingLeft="57rem"
-            >
-              <p>인재를 찾습니다</p>
-            </FifthText>
-            <Link href="/hire">
-              <FifthButton>지원하기</FifthButton>
-            </Link>
-          </FifthBottom>
-        </FifthSection>
-      </Animation>
-    </StyledComponentsRegistry>
+    // </StyledComponentsRegistry>
   );
 }
 

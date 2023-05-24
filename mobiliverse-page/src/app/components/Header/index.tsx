@@ -1,31 +1,31 @@
-'use client';
-import { usePathname } from 'next/navigation';
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import styled from 'styled-components';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+"use client";
+import { usePathname } from "next/navigation";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import styled from "styled-components";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Header() {
   const pathname = usePathname();
-  const [ActiveLink, setActiveLink] = useState('');
+  const [ActiveLink, setActiveLink] = useState("");
   const handleLinkClick = (link: React.SetStateAction<string>) => {
     setActiveLink(link);
   };
   useEffect(() => {
-    if (pathname === '/') {
-      setActiveLink('home');
-    } else if (pathname === '/about') {
-      setActiveLink('about');
-    } else if (pathname === '/erp') {
-      setActiveLink('erp');
-    } else if (pathname === '/platform') {
-      setActiveLink('platform');
-    } else if (pathname === '/ir') {
-      setActiveLink('ir');
-    } else if (pathname === '/news') {
-      setActiveLink('news');
-    } else if (pathname === '/hire') {
-      setActiveLink('hire');
+    if (pathname === "/") {
+      setActiveLink("home");
+    } else if (pathname === "/about") {
+      setActiveLink("about");
+    } else if (pathname === "/erp") {
+      setActiveLink("erp");
+    } else if (pathname === "/platform") {
+      setActiveLink("platform");
+    } else if (pathname === "/ir") {
+      setActiveLink("ir");
+    } else if (pathname === "/news") {
+      setActiveLink("news");
+    } else if (pathname === "/hire") {
+      setActiveLink("hire");
     }
   }, [pathname]);
   const [isOpen, setIsOpen] = useState(false);
@@ -42,10 +42,10 @@ export default function Header() {
           <Link
             href="/"
             className={
-              ActiveLink === 'home' ? `${HeaderLink} ${ActiveLink}` : HeaderLink
+              ActiveLink === "home" ? `${HeaderLink} ${ActiveLink}` : HeaderLink
             }
-            style={ActiveLink === 'home' ? { color: '#5048e5' } : undefined}
-            onClick={() => handleLinkClick('home')}
+            style={ActiveLink === "home" ? { color: "#5048e5" } : undefined}
+            onClick={() => handleLinkClick("home")}
           >
             홈
           </Link>
@@ -54,12 +54,12 @@ export default function Header() {
           <Link
             href="/about"
             className={
-              ActiveLink === 'about'
+              ActiveLink === "about"
                 ? `${HeaderLink} ${ActiveLink}`
                 : HeaderLink
             }
-            style={ActiveLink === 'about' ? { color: '#5048e5' } : undefined}
-            onClick={() => handleLinkClick('about')}
+            style={ActiveLink === "about" ? { color: "#5048e5" } : undefined}
+            onClick={() => handleLinkClick("about")}
           >
             회사소개
           </Link>
@@ -70,9 +70,9 @@ export default function Header() {
             <HeaderLi>
               <Link
                 href="/erp"
-                className={ActiveLink === 'erp' ? ActiveLink : ''}
-                style={ActiveLink === 'erp' ? { color: '#5048e5' } : undefined}
-                onClick={() => handleLinkClick('erp')}
+                className={ActiveLink === "erp" ? ActiveLink : ""}
+                style={ActiveLink === "erp" ? { color: "#5048e5" } : undefined}
+                onClick={() => handleLinkClick("erp")}
               >
                 가마ERP
               </Link>
@@ -80,11 +80,11 @@ export default function Header() {
             <HeaderLi>
               <Link
                 href="/platform"
-                className={ActiveLink === 'platform' ? ActiveLink : ''}
+                className={ActiveLink === "platform" ? ActiveLink : ""}
                 style={
-                  ActiveLink === 'platform' ? { color: '#5048e5' } : undefined
+                  ActiveLink === "platform" ? { color: "#5048e5" } : undefined
                 }
-                onClick={() => handleLinkClick('platform')}
+                onClick={() => handleLinkClick("platform")}
               >
                 가마중개플랫폼
               </Link>
@@ -94,9 +94,9 @@ export default function Header() {
         <HeaderLi>
           <Link
             href="/ir"
-            className={ActiveLink === 'ir' ? ActiveLink : ''}
-            style={ActiveLink === 'ir' ? { color: '#5048e5' } : undefined}
-            onClick={() => handleLinkClick('ir')}
+            className={ActiveLink === "ir" ? ActiveLink : ""}
+            style={ActiveLink === "ir" ? { color: "#5048e5" } : undefined}
+            onClick={() => handleLinkClick("ir")}
           >
             투자정보(IR)
           </Link>
@@ -104,9 +104,9 @@ export default function Header() {
         <HeaderLi>
           <Link
             href="/news"
-            className={ActiveLink === 'news' ? ActiveLink : ''}
-            style={ActiveLink === 'news' ? { color: '#5048e5' } : undefined}
-            onClick={() => handleLinkClick('news')}
+            className={ActiveLink === "news" ? ActiveLink : ""}
+            style={ActiveLink === "news" ? { color: "#5048e5" } : undefined}
+            onClick={() => handleLinkClick("news")}
           >
             모빌리버스소식
           </Link>
@@ -114,9 +114,9 @@ export default function Header() {
         <HeaderLi>
           <Link
             href="/hire"
-            className={ActiveLink === 'hire' ? ActiveLink : ''}
-            style={ActiveLink === 'hire' ? { color: '#5048e5' } : undefined}
-            onClick={() => handleLinkClick('hire')}
+            className={ActiveLink === "hire" ? ActiveLink : ""}
+            style={ActiveLink === "hire" ? { color: "#5048e5" } : undefined}
+            onClick={() => handleLinkClick("hire")}
           >
             인재채용
           </Link>
@@ -134,12 +134,12 @@ export default function Header() {
               <Link
                 href="/"
                 className={
-                  ActiveLink === 'home'
+                  ActiveLink === "home"
                     ? `${HeaderLink} ${ActiveLink}`
                     : HeaderLink
                 }
-                style={ActiveLink === 'home' ? { color: '#5048e5' } : undefined}
-                onClick={() => handleLinkClick('home')}
+                style={ActiveLink === "home" ? { color: "#5048e5" } : undefined}
+                onClick={() => handleLinkClick("home")}
               >
                 홈
               </Link>
@@ -148,14 +148,14 @@ export default function Header() {
               <Link
                 href="/about"
                 className={
-                  ActiveLink === 'about'
+                  ActiveLink === "about"
                     ? `${HeaderLink} ${ActiveLink}`
                     : HeaderLink
                 }
                 style={
-                  ActiveLink === 'about' ? { color: '#5048e5' } : undefined
+                  ActiveLink === "about" ? { color: "#5048e5" } : undefined
                 }
-                onClick={() => handleLinkClick('about')}
+                onClick={() => handleLinkClick("about")}
               >
                 회사소개
               </Link>
@@ -166,14 +166,14 @@ export default function Header() {
                 <Link
                   href="/erp"
                   className={
-                    ActiveLink === 'erp'
+                    ActiveLink === "erp"
                       ? `${HeaderLink} ${ActiveLink}`
                       : HeaderLink
                   }
                   style={
-                    ActiveLink === 'erp' ? { color: '#5048e5' } : undefined
+                    ActiveLink === "erp" ? { color: "#5048e5" } : undefined
                   }
-                  onClick={() => handleLinkClick('erp')}
+                  onClick={() => handleLinkClick("erp")}
                 >
                   가마ERP
                 </Link>
@@ -182,14 +182,14 @@ export default function Header() {
                 <Link
                   href="/platform"
                   className={
-                    ActiveLink === 'platform'
+                    ActiveLink === "platform"
                       ? `${HeaderLink} ${ActiveLink}`
                       : HeaderLink
                   }
                   style={
-                    ActiveLink === 'platform' ? { color: '#5048e5' } : undefined
+                    ActiveLink === "platform" ? { color: "#5048e5" } : undefined
                   }
-                  onClick={() => handleLinkClick('platform')}
+                  onClick={() => handleLinkClick("platform")}
                 >
                   가마중계플랫폼
                 </Link>
@@ -199,12 +199,12 @@ export default function Header() {
               <Link
                 href="/ir"
                 className={
-                  ActiveLink === 'ir'
+                  ActiveLink === "ir"
                     ? `${HeaderLink} ${ActiveLink}`
                     : HeaderLink
                 }
-                style={ActiveLink === 'ir' ? { color: '#5048e5' } : undefined}
-                onClick={() => handleLinkClick('ir')}
+                style={ActiveLink === "ir" ? { color: "#5048e5" } : undefined}
+                onClick={() => handleLinkClick("ir")}
               >
                 투자정보(IR)
               </Link>
@@ -213,12 +213,12 @@ export default function Header() {
               <Link
                 href="/news"
                 className={
-                  ActiveLink === 'news'
+                  ActiveLink === "news"
                     ? `${HeaderLink} ${ActiveLink}`
                     : HeaderLink
                 }
-                style={ActiveLink === 'news' ? { color: '#5048e5' } : undefined}
-                onClick={() => handleLinkClick('news')}
+                style={ActiveLink === "news" ? { color: "#5048e5" } : undefined}
+                onClick={() => handleLinkClick("news")}
               >
                 모빌리버스 소식
               </Link>
@@ -227,12 +227,12 @@ export default function Header() {
               <Link
                 href="/hire"
                 className={
-                  ActiveLink === 'hire'
+                  ActiveLink === "hire"
                     ? `${HeaderLink} ${ActiveLink}`
                     : HeaderLink
                 }
-                style={ActiveLink === 'hire' ? { color: '#5048e5' } : undefined}
-                onClick={() => handleLinkClick('hire')}
+                style={ActiveLink === "hire" ? { color: "#5048e5" } : undefined}
+                onClick={() => handleLinkClick("hire")}
               >
                 인재소식
               </Link>
@@ -244,24 +244,29 @@ export default function Header() {
   );
 }
 const HeaderSection = styled.div`
-  min-width: 100%;
+  width: 100%;
   display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   border-bottom: 0.1rem solid black;
 `;
 const HeaderImg = styled.img`
-  text-align: center;
-  align-items: center;
+  align-items: left;
+  cursor: pointer;
+  @media (max-width: 360px) {
+    width: 13rem;
+  }
 `;
 const NavMenu = styled.ul`
-  @media (max-width: 768px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  @media (max-width: 900px) {
     display: none;
   }
-  @media (min-width: 768px) {
-    display: flex;
+  @media (min-width: 970px) {
     padding-left: 0;
     margin-left: 4rem;
     font-size: 0.8rem;
@@ -286,10 +291,10 @@ const HeaderLi = styled.li`
   @media (min-width: 900px) {
     font-size: 1rem;
   }
+  text-align: center;
   font-weight: bold;
   height: 100%;
   display: inline-block;
-  align-items: center;
   padding: 0.1rem 0.8rem;
   position: relative;
   &:hover ${SubMenu} {
@@ -308,14 +313,16 @@ const HeaderLi = styled.li`
   }
 `;
 const HamburgerMenu = styled.div`
-  @media (min-width: 768px) {
+  right: 1rem;
+  top: 1rem;
+  position: absolute;
+  @media (min-width: 901px) {
     display: none;
   }
 `;
 const HamburgerButton = styled.button`
-  width: 2rem;
-  height: 2rem;
-  margin-left: 17rem;
+  position: relative;
+  cursor: pointer;
   border: none;
   background-color: transparent;
   font-size: 2rem;
@@ -323,13 +330,6 @@ const HamburgerButton = styled.button`
   transition: 0.7s;
   &:hover {
     color: #000;
-    transform: scale(1.4);
-  }
-  @media (max-width: 500px) {
-    margin-left: 8rem;
-  }
-  @media (max-width: 380px) {
-    margin-left: 0.8rem;
   }
 `;
 const HamburgerSubMenu = styled.ul`
@@ -338,26 +338,14 @@ const HamburgerSubMenu = styled.ul`
   margin-top: -11rem;
   margin-left: -11.5rem;
   display: none;
-  position: absolute;
   top: 100%;
   width: 7rem;
   background-color: rgb(245, 247, 250);
 `;
 const NavIcon = styled.ul`
-  @media (max-width: 768px) {
-    z-index: 100;
-  }
-  @media (max-width: 500px) {
-    padding: 0.9rem;
-    margin-left: 2rem;
-  }
-  @media (max-width: 380px) {
-    margin-left: -7rem;
-    padding: 0.9rem;
-  }
   display: block;
-  margin-top: -0.01rem;
-  margin-left: 13rem;
+  margin-top: -1rem;
+  margin-left: -8rem;
   margin-right: -20rem;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255);
@@ -365,7 +353,7 @@ const NavIcon = styled.ul`
   text-align: center;
   padding: 1rem;
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
   z-index: 500;
   line-height: 200%;
 

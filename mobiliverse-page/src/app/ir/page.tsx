@@ -1,11 +1,14 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 // import styles from './page.module.css';
-import styled, { keyframes } from 'styled-components';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import styled, { keyframes } from "styled-components";
 
 export default function IR() {
   return (
     <Animation>
+      <Header />
       <Download>
         <DownloadName>최신 IR 발표자료</DownloadName>
         <a href="./downloads/IR.pdf" download>
@@ -28,6 +31,7 @@ export default function IR() {
           <Button>문의하기</Button>
         </ButtonDiv>
       </Inquiry>
+      <Footer />
     </Animation>
   );
 }
@@ -135,7 +139,7 @@ const Answer = styled.input`
   border-radius: 0.5rem;
   margin-left: 17rem;
   margin-top: -0.5rem;
-  border: 1px solid ${(props) => (props.required ? 'red' : 'initial')};
+  border: 1px solid ${(props) => (props.required ? "red" : "initial")};
   height: 2rem;
   width: 39rem;
   &.Large {
