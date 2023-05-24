@@ -340,7 +340,7 @@ const HamburgerSubMenu = styled.ul`
   display: none;
   top: 100%;
   width: 7rem;
-  /* background-color: rgb(245, 247, 250); */
+  background-color: rgb(245, 247, 250);
 `;
 const NavIcon = styled.ul`
   display: block;
