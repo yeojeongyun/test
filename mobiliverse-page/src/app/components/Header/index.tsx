@@ -295,7 +295,6 @@ const HeaderLi = styled.li`
   font-weight: bold;
   height: 100%;
   display: inline-block;
-  /* align-items: center; */
   padding: 0.1rem 0.8rem;
   position: relative;
   &:hover ${SubMenu} {
@@ -314,16 +313,16 @@ const HeaderLi = styled.li`
   }
 `;
 const HamburgerMenu = styled.div`
+  right: 1rem;
+  top: 1rem;
+  position: absolute;
   @media (min-width: 901px) {
     display: none;
   }
 `;
 const HamburgerButton = styled.button`
-  margin-top: 1rem;
-  /* width: 2rem; */
+  position: relative;
   cursor: pointer;
-  /* height: 2rem; */
-  margin-left: 1rem;
   border: none;
   background-color: transparent;
   font-size: 2rem;
@@ -331,20 +330,7 @@ const HamburgerButton = styled.button`
   transition: 0.7s;
   &:hover {
     color: #000;
-    /* transform: scale(1.4); */
   }
-  /* @media (max-width: 901px) {
-    margin-left: 44rem;
-  }
-  @media (max-width: 764px) {
-    margin-left: 33rem;
-  }
-  @media (max-width: 500px) {
-    margin-left: 23rem;
-  }
-  @media (max-width: 360px) {
-    margin-left: 15rem;
-  } */
 `;
 const HamburgerSubMenu = styled.ul`
   font-size: 1rem;
@@ -352,31 +338,14 @@ const HamburgerSubMenu = styled.ul`
   margin-top: -11rem;
   margin-left: -11.5rem;
   display: none;
-  /* position: absolute; */
-  top: 100%;
+  top: 10rem;
   width: 7rem;
   background-color: rgb(245, 247, 250);
 `;
 const NavIcon = styled.ul`
-  /* @media (max-width: 900px) {
-    padding: 0.9rem;
-    margin-left: 36rem;
-  }
-  @media (max-width: 764px) {
-    padding: 0.9rem;
-    margin-left: 25rem;
-  }
-  @media (max-width: 500px) {
-    margin-left: 15rem;
-    padding: 0.9rem;
-  }
-  @media (max-width: 360px) {
-    margin-left: 8rem;
-    padding: 0.9rem;
-  } */
   display: block;
-  margin-top: -0.01rem;
-  margin-left: -7rem;
+  margin-top: -1rem;
+  margin-left: -8rem;
   margin-right: -20rem;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255);
