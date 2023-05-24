@@ -244,24 +244,25 @@ export default function Header() {
   );
 }
 const HeaderSection = styled.div`
-  /* min-width: 100%; */
-  cursor: pointer;
-  /* display: flex; */
-  /* text-align: center;
-  align-items: center;
-  justify-content: center; */
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
   position: relative;
   border-bottom: 0.1rem solid black;
 `;
 const HeaderImg = styled.img`
   align-items: left;
+  cursor: pointer;
   @media (max-width: 360px) {
     width: 13rem;
   }
 `;
 const NavMenu = styled.ul`
-  text-align: center;
-  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   @media (max-width: 900px) {
     display: none;
   }
@@ -290,10 +291,11 @@ const HeaderLi = styled.li`
   @media (min-width: 900px) {
     font-size: 1rem;
   }
+  text-align: center;
   font-weight: bold;
   height: 100%;
   display: inline-block;
-  align-items: center;
+  /* align-items: center; */
   padding: 0.1rem 0.8rem;
   position: relative;
   &:hover ${SubMenu} {
@@ -317,11 +319,11 @@ const HamburgerMenu = styled.div`
   }
 `;
 const HamburgerButton = styled.button`
-  margin-top: -10rem;
-  width: 2rem;
+  margin-top: 1rem;
+  /* width: 2rem; */
   cursor: pointer;
-  height: 2rem;
-  margin-left: 17rem;
+  /* height: 2rem; */
+  margin-left: 1rem;
   border: none;
   background-color: transparent;
   font-size: 2rem;
@@ -331,7 +333,7 @@ const HamburgerButton = styled.button`
     color: #000;
     /* transform: scale(1.4); */
   }
-  @media (max-width: 901px) {
+  /* @media (max-width: 901px) {
     margin-left: 44rem;
   }
   @media (max-width: 764px) {
@@ -342,7 +344,7 @@ const HamburgerButton = styled.button`
   }
   @media (max-width: 360px) {
     margin-left: 15rem;
-  }
+  } */
 `;
 const HamburgerSubMenu = styled.ul`
   font-size: 1rem;
@@ -350,13 +352,13 @@ const HamburgerSubMenu = styled.ul`
   margin-top: -11rem;
   margin-left: -11.5rem;
   display: none;
-  position: absolute;
+  /* position: absolute; */
   top: 100%;
   width: 7rem;
   background-color: rgb(245, 247, 250);
 `;
 const NavIcon = styled.ul`
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     padding: 0.9rem;
     margin-left: 36rem;
   }
@@ -371,10 +373,10 @@ const NavIcon = styled.ul`
   @media (max-width: 360px) {
     margin-left: 8rem;
     padding: 0.9rem;
-  }
+  } */
   display: block;
   margin-top: -0.01rem;
-  margin-left: 13rem;
+  margin-left: -7rem;
   margin-right: -20rem;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255);
@@ -398,4 +400,3 @@ const NavIcon = styled.ul`
     line-height: 2rem;
   }
 `;
-
