@@ -40,8 +40,7 @@ export default function About() {
           </HowContent>
           <Map
             loading="lazy"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtL1_J88ek3yX288KeS-gPEF-koifpmy0
-&q=현대지식산업센터 A동&region=KR&language=ko"
+            src=""
           ></Map>
         </How>
 
